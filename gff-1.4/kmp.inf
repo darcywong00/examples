@@ -1,0 +1,76 @@
+[Package]
+Version=7.0
+ExecuteProgram=
+ReadMeFile=readme.htm
+GraphicFile=sideimage.bmp
+[Buttons]
+Count=3
+[Button-0]
+ButtonType=install
+Caption=&Install
+URL=
+Left=0
+Top=0
+[Button-1]
+ButtonType=cancel
+Caption=Cancel
+URL=
+Left=0
+Top=0
+[Button-2]
+ButtonType=about
+Caption=&About...
+URL=
+Left=0
+Top=0
+[StartMenu]
+Path=GFF Amharic Keyboard
+Create=1
+AddUninstallEntry=0
+[StartMenuEntries]
+Welcome="Welcome.htm",""
+Amharic Keyboard Manual (Amharic)="AmharicTyping-Amharic.pdf",""
+Amharic Keyboard Manual (English)="AmharicTyping-English.pdf",""
+OFL (Abyssinica SIL Licence)="OFL.txt",""
+GPL (WashRa + Free Serif Licence)="GNU-GPLv2.txt",""
+[Info]
+WebSite="http://keyboards.ethiopic.org","http://keyboards.ethiopic.org"
+Version="1.4",""
+Name="GFF Amharic Keyboard",""
+Copyright="Creative Commons Attribution 3.0",""
+Author="The Ge'ez Frontier Foundation","mailto:keyboards@ethiopic.org"
+[Files]
+0="File readme.htm","readme.htm",0
+1="File sideimage.bmp","sideimage.bmp",0
+2="File AmharicTyping-Amharic.pdf","AmharicTyping-Amharic.pdf",0
+3="File AmharicTyping-English.pdf","AmharicTyping-English.pdf",0
+4="File OFL.txt","OFL.txt",0
+5="File GNU-GPLv2.txt","GNU-GPLv2.txt",0
+6="File Welcome.htm","Welcome.htm",0
+7="Font Abyssinica SIL","AbyssinicaSIL-R.ttf",0
+8="Font Ethiopic Fantuwua","fantuwua.ttf",0
+9="Font Free Serif","FreeSerif.otf",0
+10="Font Ethiopic Yigezu Bisrat Goffer","goffer.ttf",0
+11="Font Ethiopic Hiwua","hiwua.ttf",0
+12="Font Ethiopia Jiret","jiret.ttf",0
+13="Font Ethiopia Jiret Slant","jiretsl.ttf",0
+14="Font Ethiopic Tint","tint.ttf",0
+15="Font Ethiopic WashRa Bold","washrab.ttf",0
+16="Font Ethiopic WashRa Bold Slant","washrabsl.ttf",0
+17="Font Ethiopic WashRa SemiBold","washrasb.ttf",0
+18="Font Ethiopic WashRa SemiBold Slant","washrasbsl.ttf",0
+19="Font Ethiopic Wookianos","wookianos.ttf",0
+20="Font Ethiopic Yebse","yebse.ttf",0
+21="File gff_amh_7.kvk","gff_amh_7.kvk",0
+22="Keyboard Amharic","gff_amh_7.kmx",0
+23="Package information","kmp.inf",0
+24="File gff_amh_7-1.4.js","gff_amh_7-1.4.js",0
+
+[Keyboard0]
+Name=Amharic
+ID=gff_amh_7
+Version=1.4
+OSKFont=wookianos.ttf
+DisplayFont=fantuwua.ttf
+Language0=am,Amharic
+Language1=gez,Ge'ez

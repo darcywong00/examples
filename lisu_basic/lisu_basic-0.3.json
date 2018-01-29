@@ -1,0 +1,20 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/lisu_basic/",
+    "fontBaseUri" : "https://darcywong00.github.io/lisu_basic/"
+  },
+  "keyboard" : {
+    "id" : "lisu_basic",
+    "name" : "Lisu Basic 0.3",
+    "filename" : "lisu_basic-0.3.js",
+    "version" : "0.3",
+    "lastModified" : "2016-07-17T14:18:54+00:00",
+    "languages" : [
+      {
+        "id" : "lis",
+        "name" : "Lisu"
+      }
+    ]
+  }
+}

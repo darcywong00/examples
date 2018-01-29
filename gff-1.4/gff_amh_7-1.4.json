@@ -1,0 +1,32 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/gff-1.4/",
+    "fontBaseUri" : "https://darcywong00.github.io/gff-1.4/"
+  },
+  "keyboard" : {
+    "id" : "gff_amh_7",
+    "name" : "Amharic",
+    "filename" : "gff_amh_7-1.4.js",
+    "version" : "1.4",
+    "font": {
+      "family":"fantuwua",
+      "source":"fantuwua.ttf"
+    },
+    "oskFont": {
+      "family":"wookianos",
+      "source":"wookianos.ttf"
+    },
+    "lastModified" : "2017-04-10T11:32:45.800+07:00",
+    "languages" : [
+      {
+        "id" : "am",
+        "name" : "Amharic"
+      },
+      {
+        "id" : "gez",
+        "name" : "Ge'ez"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/osmanya/",
+    "fontBaseUri" : "https://darcywong00.github.io/osmanya/"
+  },
+  "keyboard" : {
+    "id" : "osmanya10",
+    "name" : "Osmanya (Unicode)",
+    "filename" : "osmanya10-1.0.js",
+    "version" : "1.0",
+    "font": {
+      "family":"Noto Sans Osmanya",
+      "source":"NotoSansOsmanya-Regular.ttf"
+    },
+    "oskFont": {
+      "family":"Noto Sans Osmanya",
+      "source":"NotoSansOsmanya-Regular.ttf"
+    },
+    "lastModified" : "2016-07-17T14:18:54+00:00",
+    "languages" : [
+      {
+        "id" : "som",
+        "name" : "Osmanya"
+      }
+    ]
+  }
+}

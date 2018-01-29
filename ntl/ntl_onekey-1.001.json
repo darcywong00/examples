@@ -1,0 +1,28 @@
+{
+  "options": {
+    "device": "any",
+    "keyboardBaseUri": "https://darcywong00.github.io/ntl/",
+    "fontBaseUri": "https://darcywong00.github.io/ntl/"
+  },
+  "keyboard": {
+    "id": "ntl_onekey",
+    "name": "\u65B0\u50A3\u6587\u4E00\u952E",
+    "filename": "ntl_onekey-1.001.js",
+    "version": "1.001",
+    "lastModified": "2018-01-02T21:18:39.571+08:00",
+    "font": {
+      "family": "Nokyung",
+      "source": "Nokyung-Regular.ttf"
+    },
+    "oskFont": {
+      "family":"Nokyung",
+      "source":"Nokyung-Regular.ttf"
+    },	
+    "languages": [
+      {
+        "id": "khb",
+        "name": "\u65B0\u50A3\u6587"
+      }
+    ]
+  }
+}
