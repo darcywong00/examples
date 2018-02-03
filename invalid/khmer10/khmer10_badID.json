@@ -5,9 +5,9 @@
     "fontBaseUri" : "https://darcywong00.github.io/examples/invalid/khmer10/"
   },
   "keyboard" : {
-    "id" : "khmer10-long",
-    "name" : "Khmer Touch 1.2",
-    "filename" : "khmer10-long-1.2.js",
+    "id" : "badID",
+    "name" : "Khmer Touch x.x",
+    "filename" : "khmer10.js",
     "version" : "1.2",
     "font": {
       "family":"Khmer Mondulkiri",
