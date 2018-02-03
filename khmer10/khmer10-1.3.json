@@ -1,8 +1,8 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/khmer10/",
-    "fontBaseUri" : "https://darcywong00.github.io/khmer10/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/khmer10/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/khmer10/"
   },
   "keyboard" : {
     "id" : "khmer10",

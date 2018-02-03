@@ -1,8 +1,8 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/osmanya/",
-    "fontBaseUri" : "https://darcywong00.github.io/osmanya/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/osmanya/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/osmanya/"
   },
   "keyboard" : {
     "id" : "osmanya10",

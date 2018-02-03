@@ -1,8 +1,8 @@
 {
   "options": {
     "device": "any",
-    "keyboardBaseUri": "https://darcywong00.github.io/ntl/",
-    "fontBaseUri": "https://darcywong00.github.io/ntl/"
+    "keyboardBaseUri": "https://darcywong00.github.io/examples/ntl/",
+    "fontBaseUri": "https://darcywong00.github.io/examples/ntl/"
   },
   "keyboard": {
     "id": "ntl_onekey",

@@ -1,13 +1,13 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/khmer10-bad/",
-    "fontBaseUri" : "https://darcywong00.github.io/khmer10-bad/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/invalid/khmer10/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/invalid/khmer10/"
   },
   "keyboard" : {
-    "id" : "missingID",
-    "name" : "Khmer Touch x.x",
-    "filename" : "khmer10.js",
+    "id" : "khmer10",
+    "name" : "Khmer Touch 1.2",
+    "filename" : "khmer10-zero-1.2.js",
     "version" : "1.2",
     "font": {
       "family":"Khmer Mondulkiri",

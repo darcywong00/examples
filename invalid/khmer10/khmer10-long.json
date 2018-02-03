@@ -1,14 +1,13 @@
 {
-  // Invalid JSON because comments not allowed
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/khmer10-bad/",
-    "fontBaseUri" : "https://darcywong00.github.io/khmer10-bad/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/invalid/khmer10/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/invalid/khmer10/"
   },
   "keyboard" : {
-    "id" : "khmer10",
+    "id" : "khmer10-long",
     "name" : "Khmer Touch 1.2",
-    "filename" : "khmer10-zero-1.2.js",
+    "filename" : "khmer10-long-1.2.js",
     "version" : "1.2",
     "font": {
       "family":"Khmer Mondulkiri",

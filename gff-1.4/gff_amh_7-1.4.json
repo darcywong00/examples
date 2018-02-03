@@ -1,8 +1,8 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/gff-1.4/",
-    "fontBaseUri" : "https://darcywong00.github.io/gff-1.4/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/gff-1.4/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/gff-1.4/"
   },
   "keyboard" : {
     "id" : "gff_amh_7",

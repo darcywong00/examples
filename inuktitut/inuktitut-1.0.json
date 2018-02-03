@@ -1,8 +1,8 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/inuktitut/",
-    "fontBaseUri" : "https://darcywong00.github.io/inuktitut/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/inuktitut/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/inuktitut/"
   },
   "keyboard" : {
     "id" : "inuktitut_pirurvik",

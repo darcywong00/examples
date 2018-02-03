@@ -1,8 +1,8 @@
 {
   "options" : {
     "device" : "any",
-    "keyboardBaseUri" : "https://darcywong00.github.io/lisu_basic/",
-    "fontBaseUri" : "https://darcywong00.github.io/lisu_basic/"
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/lisu_basic/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/lisu_basic/"
   },
   "keyboard" : {
     "id" : "lisu_basic",
