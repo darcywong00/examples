@@ -10,14 +10,6 @@
     "filename": "ntl_onekey-1.001.js",
     "version": "1.001",
     "lastModified": "2018-01-02T21:18:39.571+08:00",
-    "font": {
-      "family": "Nokyung",
-      "source": "Nokyung-Regular.ttf"
-    },
-    "oskFont": {
-      "family":"Nokyung",
-      "source":"Nokyung-Regular.ttf"
-    },	
     "languages": [
       {
         "id": "khb",
