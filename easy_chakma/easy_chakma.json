@@ -1,0 +1,28 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/easy_chakma/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/easy_chakma/"
+  },
+  "keyboard" : {
+    "id" : "easy_chakma",
+    "name" : "Easy Chakma 1.8",
+    "filename" : "easy_chakma-1.8.js",
+    "version" : "1.8",
+    "font": {
+      "family":"Ribeng",
+      "source":"RibengUni-Regular.ttf"
+    },
+    "oskFont": {
+      "family":"Ribeng",
+      "source":"RibengUni-Regular"
+    },
+    "lastModified" : "2016-07-17T14:18:54+00:00",
+    "languages" : [
+      {
+        "id" : "ccp",
+        "name" : "Chakma"
+      }
+    ]
+  }
+}
