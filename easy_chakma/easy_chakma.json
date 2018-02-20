@@ -6,9 +6,9 @@
   },
   "keyboard" : {
     "id" : "easy_chakma",
-    "name" : "Easy Chakma 1.8",
-    "filename" : "easy_chakma-1.8.js",
-    "version" : "1.8",
+    "name" : "Easy Chakma 1.18",
+    "filename" : "easy_chakma-1.18.js",
+    "version" : "1.18",
     "font": {
       "family":"Ribeng",
       "source":"RibengUni-Regular.ttf"
