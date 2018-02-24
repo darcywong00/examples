@@ -3,15 +3,28 @@ KeymanWeb.KR(new Keyboard_gff_amh_7());
 function Keyboard_gff_amh_7() {
     this.KI = "Keyboard_gff_amh_7";
     this.KN = "Amharic";
+    this.KMINVER = "9.0";
     this.KV = {
         F: ' 1em "Abyssinica SIL"',
-        K102: 0,
-        BK: new Array("`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "", "", "", "ቅ", "ው", "እዕ", "ር", "ት", "ይ", "ኡዑ", "ኢዒ", "ኦዖ", "ፕ", "[", "]", "\\", "", "", "", "አዓ", "ስሥ", "ድ", "ፍ", "ግ", "ህኅ", "ጅ", "ክ", "ል", "፤", "'", "", "", "", "", "", "", "ዝ", "ሽ", "ች", "ቭ", "ብ", "ን", "ም", "፣፥", ".", "/", "", "", "", "", "", "", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "፟", "+", "", "", "", "ቅ", "ው", "እዕ", "ር", "ጥ", "ይ", "ኡ", "ኢ", "ኦዖ", "ጵ", "{", "}", "|", "", "", "", "አዓ", "ጽፅ", "ድ", "ፍ", "ግ", "ሕ", "ጅ", "ኽ", "ል", "፡", "\"", "", "", "", "", "", "", "ዥ", "ሽ", "ጭ", "ቭ", "ብ", "ኝ", "ም", "‹", "›", "?", "", "", "", "", "", "፡")
+        K102: 0
     };
     this.KDU = 1;
+    this.KLS = {
+        "default": ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "", "", "", "ቅ", "ው", "እዕ", "ር", "ት", "ይ", "ኡዑ", "ኢዒ", "ኦዖ", "ፕ", "[", "]", "\\", "", "", "", "አዓ", "ስሥ", "ድ", "ፍ", "ግ", "ህኅ", "ጅ", "ክ", "ል", "፤", "'", "", "", "", "", "", "", "ዝ", "ሽ", "ች", "ቭ", "ብ", "ን", "ም", "፣፥", ".", "/", "", "", "", "", "", ""],
+        "shift": ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "፟", "+", "", "", "", "ቅ", "ው", "እዕ", "ር", "ጥ", "ይ", "ኡ", "ኢ", "ኦዖ", "ጵ", "{", "}", "|", "", "", "", "አዓ", "ጽፅ", "ድ", "ፍ", "ግ", "ሕ", "ጅ", "ኽ", "ል", "፡", "\"", "", "", "", "", "", "", "ዥ", "ሽ", "ጭ", "ቭ", "ብ", "ኝ", "ም", "‹", "›", "?", "", "", "", "", "", "፡"]
+    };
+    this.KV.BK = (function(x) {
+        var e = Array.apply(null, Array(65)).map(String.prototype.valueOf, ""),
+            r = [],
+            v, i, m = ['default', 'shift', 'ctrl', 'shift-ctrl', 'alt', 'shift-alt', 'ctrl-alt', 'shift-ctrl-alt'];
+        for (i = m.length - 1; i >= 0; i--)
+            if ((v = x[m[i]]) || r.length) r = (v ? v : e).slice().concat(r);
+        return r
+    })(this.KLS);
     this.KH = '';
     this.KM = 0;
     this.KBVER = "1.4";
+    this.KMBM = 0x0010;
     this.KVKD = "T_GLOTTAL_E T_PHARYNGEAL_E T_TE T_THE T_GLOTTAL_U T_PHARYNGEAL_U T_GLOTTAL_I T_PHARYNGEAL_I T_GLOTTAL_O T_PHARYNGEAL_O T_PE T_PHE T_GLOTTAL_A T_PHARYNGEAL_A T_SE T_SZE T_TSE T_TZE T_HE T_XE T_HHE T_ZE T_ZHE T_CE T_CHE T_NE T_NYE T_KE T_KXE T_WORDSPACE T_LCHEVRON T_RCHEVRON T_LPARENTHESIS T_LBRKT T_LBRACE T_LANGLE T_RPARENTHESIS T_RBRKT T_RBRACE T_RANGLE T_COMMA_ENG T_COLON_ENG T_SEMICOLON_ENG T_QUESTION_ENG T_EXCLAMATION T_ALPHA T_new_2514 T_new_2515 T_new_2516 T_COMMA T_FULL_STOP T_PARAGRAPH_SEPARATOR T_SECTION_MARK T_QUESTION_MARK T_SEMICOLON T_COLON T_PREFACE_COLON T_GEMINATION_MARK T_ONE T_TWO T_THREE T_FOUR T_FIVE T_SIX T_SEVEN T_EIGHT T_NINE T_TEN T_TWENTY T_THIRTY T_FORTY T_FIFTY T_SIXTY T_SEVENTY T_EIGHTY T_NINETY T_HUNDRED T_TEN_THOUSAND";
     this.KVKL = {
         "tablet": {
@@ -1390,45 +1403,45 @@ function Keyboard_gff_amh_7() {
             }]
         }
     };
-    this.s12 = "ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ";
-    this.s13 = "ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ";
-    this.s14 = "ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ";
-    this.s15 = "ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ";
-    this.s16 = "ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ";
-    this.s17 = "ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ";
-    this.s18 = "ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ";
-    this.s19 = "hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp";
-    this.s20 = "LMRXBVQWYDJGF";
-    this.s21 = "ልምርሽብቭቅውይድጅግፍ";
-    this.s22 = "aAuUiIeEoO";
-    this.s23 = "አአኡኡኢኢእእኦኦ";
-    this.s24 = "ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ";
-    this.s25 = "ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ";
-    this.s26 = "ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ";
-    this.s27 = "ሁኁኩቁጉ";
-    this.s28 = "ኈኈኰቈጐ";
-    this.s29 = "ኍኍኵቍጕ";
-    this.s30 = "ኊኊኲቊጒ";
-    this.s31 = "ኋኋኳቋጓ";
-    this.s32 = "ኌኌኴቌጔ";
-    this.s33 = "23456789";
-    this.s34 = "፪፫፬፭፮፯፰፱";
-    this.s35 = "፳፴፵፶፷፸፹፺";
-    this.s36 = "123456789";
-    this.s37 = "፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼";
-    this.s38 = "0123456789";
-    this.s39 = ":,";
-    this.s40 = "፡፣";
-    this.s41 = "eE";
-    this.s42 = "uU";
-    this.s43 = "iI";
-    this.s44 = "aA";
-    this.s45 = "oO";
+    this.s13 = "ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ";
+    this.s14 = "ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ";
+    this.s15 = "ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ";
+    this.s16 = "ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ";
+    this.s17 = "ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ";
+    this.s18 = "ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ";
+    this.s19 = "ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ";
+    this.s20 = "hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp";
+    this.s21 = "LMRXBVQWYDJGF";
+    this.s22 = "ልምርሽብቭቅውይድጅግፍ";
+    this.s23 = "aAuUiIeEoO";
+    this.s24 = "አአኡኡኢኢእእኦኦ";
+    this.s25 = "ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ";
+    this.s26 = "ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ";
+    this.s27 = "ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ";
+    this.s28 = "ሁኁኩቁጉ";
+    this.s29 = "ኈኈኰቈጐ";
+    this.s30 = "ኍኍኵቍጕ";
+    this.s31 = "ኊኊኲቊጒ";
+    this.s32 = "ኋኋኳቋጓ";
+    this.s33 = "ኌኌኴቌጔ";
+    this.s34 = "23456789";
+    this.s35 = "፪፫፬፭፮፯፰፱";
+    this.s36 = "፳፴፵፶፷፸፹፺";
+    this.s37 = "123456789";
+    this.s38 = "፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼";
+    this.s39 = "0123456789";
+    this.s40 = ":,";
+    this.s41 = "፡፣";
+    this.s42 = "eE";
+    this.s43 = "uU";
+    this.s44 = "iI";
+    this.s45 = "aA";
+    this.s46 = "oO";
     this.s51 = "ÇçÐðÝýÿßÑñ";
     this.s52 = "ጭችድድይይይጽኝኝ";
     this.s53 = "àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ";
     this.s54 = "አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ";
-    this.KVER = "9.0.484.0";
+    this.KVER = "10.0.1026.0";
     this.gs = function(t, e) {
         return this.g0(t, e);
     };
@@ -1436,647 +1449,30 @@ function Keyboard_gff_amh_7() {
         var k = KeymanWeb,
             r = 0,
             m = 0;
-        if (k.KKM(e, 16400, 32)) {
+        if (k.KKM(e, 16384, 286) && k.KCM(1, t, "«", 1)) {
             r = m = 1;
-            k.KO(0, t, "፡");
-        } else if (k.KKM(e, 16384, 222) && k.KDM(0, t, 0)) {
+            k.KO(1, t, "(");
+        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, "»", 1)) {
             r = m = 1;
-            k.KO(0, t, "'");
-        } else if (k.KKM(e, 16384, 222) && k.KA(0, k.KC(1, 1, t), this.s17)) {
+            k.KO(1, t, ")");
+        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "(", 1)) {
             r = m = 1;
-            k.KIO(1, this.s17, 1, t);
-            k.KDO(-1, t, 0);
-        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, "፣", 1)) {
+            k.KO(1, t, "[");
+        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, ")", 1)) {
             r = m = 1;
-            k.KO(1, t, "፥");
-        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, "፥", 1)) {
-            r = m = 1;
-            k.KO(1, t, ",");
-        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, ",", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፣");
-        } else if (k.KKM(e, 16384, 188)) {
-            r = m = 1;
-            k.KO(0, t, "፣");
-        } else if (k.KKM(e, 16384, 189) && k.KCM(1, t, "፡", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፦");
-        } else if (k.KKM(e, 16384, 190) && k.KCM(2, t, "..", 2)) {
-            r = m = 1;
-            k.KO(2, t, "…");
-        } else if (k.KKM(e, 16384, 190) && k.KCM(1, t, "…", 1)) {
-            r = m = 1;
-            k.KO(1, t, "...");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(3, t, "፲፻፼", 3)) {
-            r = m = 1;
-            k.KO(3, t, "፼፼");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s34) && k.KCM(2, t, "፻ ", 2)) {
-            r = m = 1;
-            k.KIO(3, this.s35, 1, t);
-            k.KO(-1, t, "፻");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s34) && k.KCM(2, t, "፻፼", 2)) {
-            r = m = 1;
-            k.KIO(3, this.s35, 1, t);
-            k.KO(-1, t, "፻፼");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s35) && k.KCM(2, t, "፻፼", 2)) {
-            r = m = 1;
-            k.KIO(3, this.s34, 1, t);
-            k.KO(-1, t, "፼፼");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፲፻", 2)) {
-            r = m = 1;
-            k.KO(2, t, "፼");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፲፼", 2)) {
-            r = m = 1;
-            k.KO(2, t, "፻፼");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፻፼", 2)) {
-            r = m = 1;
-            k.KO(2, t, "፲፻፼");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፼፼", 2)) {
-            r = m = 1;
-            k.KB(t);
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s35) && k.KCM(1, t, "፻", 1)) {
-            r = m = 1;
-            k.KIO(2, this.s34, 1, t);
-            k.KO(-1, t, "፼");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s34) && k.KCM(1, t, "፼", 1)) {
-            r = m = 1;
-            k.KIO(2, this.s35, 1, t);
-            k.KO(-1, t, "፼");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s35) && k.KCM(1, t, "፼", 1)) {
-            r = m = 1;
-            k.KIO(2, this.s34, 1, t);
-            k.KO(-1, t, "፻፼");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፩", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፲");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፲", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፻");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፻", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፲፻");
-        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፼", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፲፼");
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(1, 1, t), this.s34)) {
-            r = m = 1;
-            k.KIO(1, this.s35, 1, t);
-        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(1, 1, t), this.s35)) {
-            r = m = 1;
-            k.KIO(1, this.s34, 1, t);
-            k.KO(-1, t, "፻");
-        } else if (k.KKM(e, 16384, 49) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "1");
-        } else if (k.KKM(e, 16384, 49) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፩");
-        } else if (k.KKM(e, 16384, 49) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፩");
-        } else if (k.KKM(e, 16384, 50) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "2");
-        } else if (k.KKM(e, 16384, 50) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፪");
-        } else if (k.KKM(e, 16384, 50) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፪");
-        } else if (k.KKM(e, 16384, 51) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "3");
-        } else if (k.KKM(e, 16384, 51) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፫");
-        } else if (k.KKM(e, 16384, 51) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፫");
-        } else if (k.KKM(e, 16384, 52) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "4");
-        } else if (k.KKM(e, 16384, 52) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፬");
-        } else if (k.KKM(e, 16384, 52) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፬");
-        } else if (k.KKM(e, 16384, 53) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "5");
-        } else if (k.KKM(e, 16384, 53) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፭");
-        } else if (k.KKM(e, 16384, 53) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፭");
-        } else if (k.KKM(e, 16384, 54) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "6");
-        } else if (k.KKM(e, 16384, 54) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፮");
-        } else if (k.KKM(e, 16384, 54) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፮");
-        } else if (k.KKM(e, 16384, 55) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "7");
-        } else if (k.KKM(e, 16384, 55) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፯");
-        } else if (k.KKM(e, 16384, 55) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፯");
-        } else if (k.KKM(e, 16384, 56) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "8");
-        } else if (k.KKM(e, 16384, 56) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፰");
-        } else if (k.KKM(e, 16384, 56) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፰");
-        } else if (k.KKM(e, 16384, 57) && k.KA(0, k.KC(2, 1, t), this.s38) && k.KA(1, k.KC(1, 1, t), this.s40)) {
-            r = m = 1;
-            k.KIO(2, this.s38, 1, t);
-            k.KIO(-1, this.s39, 2, t);
-            k.KO(-1, t, "9");
-        } else if (k.KKM(e, 16384, 57) && k.KCM(1, t, "'", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፱");
-        } else if (k.KKM(e, 16384, 57) && k.KA(0, k.KC(1, 1, t), this.s37)) {
-            r = m = 1;
-            k.KIO(1, this.s37, 1, t);
-            k.KO(-1, t, "፱");
-        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, "፡", 1)) {
-            r = m = 1;
-            k.KO(1, t, "።");
-        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, "።", 1)) {
-            r = m = 1;
-            k.KO(1, t, ":");
-        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, ":", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፡");
-        } else if (k.KKM(e, 16400, 186)) {
-            r = m = 1;
-            k.KO(0, t, "፡");
-        } else if (k.KKM(e, 16384, 186) && k.KCM(1, t, "፤", 1)) {
-            r = m = 1;
-            k.KO(1, t, ";");
-        } else if (k.KKM(e, 16384, 186) && k.KCM(1, t, ";", 1)) {
-            r = m = 1;
-            k.KO(1, t, "፤");
-        } else if (k.KKM(e, 16384, 186)) {
-            r = m = 1;
-            k.KO(0, t, "፤");
-        } else if (k.KKM(e, 16400, 188) && k.KCM(1, t, "‹", 1)) {
-            r = m = 1;
-            k.KO(1, t, "«");
-        } else if (k.KKM(e, 16400, 188) && k.KCM(1, t, "«", 1)) {
+            k.KO(1, t, "]");
+        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "[", 1)) {
             r = m = 1;
             k.KO(1, t, "<");
-        } else if (k.KKM(e, 16400, 188)) {
-            r = m = 1;
-            k.KO(0, t, "‹");
-        } else if (k.KKM(e, 16400, 190) && k.KCM(1, t, "›", 1)) {
-            r = m = 1;
-            k.KO(1, t, "»");
-        } else if (k.KKM(e, 16400, 190) && k.KCM(1, t, "»", 1)) {
+        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, "]", 1)) {
             r = m = 1;
             k.KO(1, t, ">");
-        } else if (k.KKM(e, 16400, 190)) {
+        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "<", 1)) {
             r = m = 1;
-            k.KO(0, t, "›");
-        } else if (k.KKM(e, 16400, 65) && k.KDM(0, t, 0)) {
+            k.KO(1, t, "«");
+        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, ">", 1)) {
             r = m = 1;
-            k.KO(0, t, "አ");
-        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኣ");
-        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዓ");
-        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "አ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዓ");
-        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዓ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዐ");
-        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዐ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኣ");
-        } else if (k.KKM(e, 16400, 65) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s15, 1, t);
-        } else if (k.KKM(e, 16400, 65) && k.KA(0, k.KC(1, 1, t), this.s25)) {
-            r = m = 1;
-            k.KIO(1, this.s26, 1, t);
-        } else if (k.KKM(e, 16400, 65)) {
-            r = m = 1;
-            k.KO(0, t, "አ");
-        } else if (k.KKM(e, 16400, 66)) {
-            r = m = 1;
-            k.KO(0, t, "ብ");
-        } else if (k.KKM(e, 16400, 67)) {
-            r = m = 1;
-            k.KO(0, t, "ጭ");
-        } else if (k.KKM(e, 16400, 68)) {
-            r = m = 1;
-            k.KO(0, t, "ድ");
-        } else if (k.KKM(e, 16400, 69) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "እ");
-        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "አ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኧ");
-        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ኢ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኤ");
-        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዕ");
-        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዐ");
-        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ዒ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዔ");
-        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s12, 1, t);
-        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s14)) {
-            r = m = 1;
-            k.KIO(1, this.s16, 1, t);
-        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s28, 1, t);
-        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s30)) {
-            r = m = 1;
-            k.KIO(1, this.s32, 1, t);
-        } else if (k.KKM(e, 16400, 69)) {
-            r = m = 1;
-            k.KO(0, t, "እ");
-        } else if (k.KKM(e, 16400, 70)) {
-            r = m = 1;
-            k.KO(0, t, "ፍ");
-        } else if (k.KKM(e, 16400, 71)) {
-            r = m = 1;
-            k.KO(0, t, "ግ");
-        } else if (k.KKM(e, 16400, 72)) {
-            r = m = 1;
-            k.KO(0, t, "ሕ");
-        } else if (k.KKM(e, 16400, 73) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኢ");
-        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኢ");
-        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዒ");
-        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "ኢ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዒ");
-        } else if (k.KKM(e, 16400, 73) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s14, 1, t);
-        } else if (k.KKM(e, 16400, 73) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s30, 1, t);
-        } else if (k.KKM(e, 16400, 73)) {
-            r = m = 1;
-            k.KO(0, t, "ኢ");
-        } else if (k.KKM(e, 16400, 74)) {
-            r = m = 1;
-            k.KO(0, t, "ጅ");
-        } else if (k.KKM(e, 16400, 75)) {
-            r = m = 1;
-            k.KO(0, t, "ኽ");
-        } else if (k.KKM(e, 16400, 76)) {
-            r = m = 1;
-            k.KO(0, t, "ል");
-        } else if (k.KKM(e, 16400, 77)) {
-            r = m = 1;
-            k.KO(0, t, "ም");
-        } else if (k.KKM(e, 16400, 78)) {
-            r = m = 1;
-            k.KO(0, t, "ኝ");
-        } else if (k.KKM(e, 16400, 79) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኦ");
-        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኦ");
-        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዖ");
-        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "ኦ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዖ");
-        } else if (k.KKM(e, 16400, 79) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s18, 1, t);
-        } else if (k.KKM(e, 16400, 79)) {
-            r = m = 1;
-            k.KO(0, t, "ኦ");
-        } else if (k.KKM(e, 16400, 80)) {
-            r = m = 1;
-            k.KO(0, t, "ጵ");
-        } else if (k.KKM(e, 16400, 81)) {
-            r = m = 1;
-            k.KO(0, t, "ቅ");
-        } else if (k.KKM(e, 16400, 82)) {
-            r = m = 1;
-            k.KO(0, t, "ር");
-        } else if (k.KKM(e, 16400, 83) && k.KCM(1, t, "ጽ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ፅ");
-        } else if (k.KKM(e, 16400, 83)) {
-            r = m = 1;
-            k.KO(0, t, "ጽ");
-        } else if (k.KKM(e, 16400, 84)) {
-            r = m = 1;
-            k.KO(0, t, "ጥ");
-        } else if (k.KKM(e, 16400, 85) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኡ");
-        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኡ");
-        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዑ");
-        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "ኡ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዑ");
-        } else if (k.KKM(e, 16400, 85) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s13, 1, t);
-        } else if (k.KKM(e, 16400, 85) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s29, 1, t);
-        } else if (k.KKM(e, 16400, 85)) {
-            r = m = 1;
-            k.KO(0, t, "ኡ");
-        } else if (k.KKM(e, 16400, 86)) {
-            r = m = 1;
-            k.KO(0, t, "ቭ");
-        } else if (k.KKM(e, 16400, 87)) {
-            r = m = 1;
-            k.KO(0, t, "ው");
-        } else if (k.KKM(e, 16400, 88)) {
-            r = m = 1;
-            k.KO(0, t, "ሽ");
-        } else if (k.KKM(e, 16400, 89)) {
-            r = m = 1;
-            k.KO(0, t, "ይ");
-        } else if (k.KKM(e, 16400, 90)) {
-            r = m = 1;
-            k.KO(0, t, "ዥ");
-        } else if (k.KKM(e, 16400, 189) && k.KCM(1, t, "፟", 1)) {
-            r = m = 1;
-            k.KO(1, t, "_");
-        } else if (k.KKM(e, 16400, 189)) {
-            r = m = 1;
-            k.KO(0, t, "፟");
-        } else if (k.KKM(e, 16400, 189)) {
-            r = m = 1;
-            k.KO(0, t, "ሥ");
-        } else if (k.KKM(e, 16400, 189)) {
-            r = m = 1;
-            k.KO(0, t, "ዐ");
-        } else if (k.KKM(e, 16400, 189)) {
-            r = m = 1;
-            k.KO(0, t, "ፅ");
-        } else if (k.KKM(e, 16400, 189)) {
-            r = m = 1;
-            k.KO(0, t, "ኅ");
-        } else if (k.KKM(e, 16384, 65) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "አ");
-        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኣ");
-        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዓ");
-        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "አ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዓ");
-        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዓ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዐ");
-        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዐ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኣ");
-        } else if (k.KKM(e, 16384, 65) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s15, 1, t);
-        } else if (k.KKM(e, 16384, 65) && k.KA(0, k.KC(1, 1, t), this.s25)) {
-            r = m = 1;
-            k.KIO(1, this.s26, 1, t);
-        } else if (k.KKM(e, 16384, 65)) {
-            r = m = 1;
-            k.KO(0, t, "አ");
-        } else if (k.KKM(e, 16384, 66)) {
-            r = m = 1;
-            k.KO(0, t, "ብ");
-        } else if (k.KKM(e, 16384, 67)) {
-            r = m = 1;
-            k.KO(0, t, "ች");
-        } else if (k.KKM(e, 16384, 68)) {
-            r = m = 1;
-            k.KO(0, t, "ድ");
-        } else if (k.KKM(e, 16384, 69) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "እ");
-        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "አ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኧ");
-        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ኢ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኤ");
-        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዕ");
-        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዐ");
-        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ዒ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዔ");
-        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s12, 1, t);
-        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s14)) {
-            r = m = 1;
-            k.KIO(1, this.s16, 1, t);
-        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s28, 1, t);
-        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s30)) {
-            r = m = 1;
-            k.KIO(1, this.s32, 1, t);
-        } else if (k.KKM(e, 16384, 69)) {
-            r = m = 1;
-            k.KO(0, t, "እ");
-        } else if (k.KKM(e, 16384, 70)) {
-            r = m = 1;
-            k.KO(0, t, "ፍ");
-        } else if (k.KKM(e, 16384, 71)) {
-            r = m = 1;
-            k.KO(0, t, "ግ");
-        } else if (k.KKM(e, 16384, 72) && k.KCM(1, t, "ህ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኅ");
-        } else if (k.KKM(e, 16384, 72)) {
-            r = m = 1;
-            k.KO(0, t, "ህ");
-        } else if (k.KKM(e, 16384, 73) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኢ");
-        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኢ");
-        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዒ");
-        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "ኢ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዒ");
-        } else if (k.KKM(e, 16384, 73) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s14, 1, t);
-        } else if (k.KKM(e, 16384, 73) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s30, 1, t);
-        } else if (k.KKM(e, 16384, 73)) {
-            r = m = 1;
-            k.KO(0, t, "ኢ");
-        } else if (k.KKM(e, 16384, 74)) {
-            r = m = 1;
-            k.KO(0, t, "ጅ");
-        } else if (k.KKM(e, 16384, 75)) {
-            r = m = 1;
-            k.KO(0, t, "ክ");
-        } else if (k.KKM(e, 16384, 76)) {
-            r = m = 1;
-            k.KO(0, t, "ል");
-        } else if (k.KKM(e, 16384, 77)) {
-            r = m = 1;
-            k.KO(0, t, "ም");
-        } else if (k.KKM(e, 16384, 78)) {
-            r = m = 1;
-            k.KO(0, t, "ን");
-        } else if (k.KKM(e, 16384, 79) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኦ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኦ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዖ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኦ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዖ");
-        } else if (k.KKM(e, 16384, 79) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s18, 1, t);
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኮ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኰ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ጎ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ጐ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኰ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኮ");
-        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ጐ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ጎ");
-        } else if (k.KKM(e, 16384, 79)) {
-            r = m = 1;
-            k.KO(0, t, "ኦ");
-        } else if (k.KKM(e, 16384, 80)) {
-            r = m = 1;
-            k.KO(0, t, "ፕ");
-        } else if (k.KKM(e, 16384, 81)) {
-            r = m = 1;
-            k.KO(0, t, "ቅ");
-        } else if (k.KKM(e, 16384, 82)) {
-            r = m = 1;
-            k.KO(0, t, "ር");
-        } else if (k.KKM(e, 16384, 83) && k.KCM(1, t, "ስ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ሥ");
-        } else if (k.KKM(e, 16384, 83)) {
-            r = m = 1;
-            k.KO(0, t, "ስ");
-        } else if (k.KKM(e, 16384, 84)) {
-            r = m = 1;
-            k.KO(0, t, "ት");
-        } else if (k.KKM(e, 16384, 85) && k.KDM(0, t, 0)) {
-            r = m = 1;
-            k.KO(0, t, "ኡ");
-        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "እ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ኡ");
-        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "ዕ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዑ");
-        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "ኡ", 1)) {
-            r = m = 1;
-            k.KO(1, t, "ዑ");
-        } else if (k.KKM(e, 16384, 85) && k.KA(0, k.KC(1, 1, t), this.s17)) {
-            r = m = 1;
-            k.KIO(1, this.s13, 1, t);
-        } else if (k.KKM(e, 16384, 85) && k.KA(0, k.KC(1, 1, t), this.s27)) {
-            r = m = 1;
-            k.KIO(1, this.s29, 1, t);
-        } else if (k.KKM(e, 16384, 85)) {
-            r = m = 1;
-            k.KO(0, t, "ኡ");
-        } else if (k.KKM(e, 16384, 86)) {
-            r = m = 1;
-            k.KO(0, t, "ቭ");
-        } else if (k.KKM(e, 16384, 87)) {
-            r = m = 1;
-            k.KO(0, t, "ው");
-        } else if (k.KKM(e, 16384, 88)) {
-            r = m = 1;
-            k.KO(0, t, "ሽ");
-        } else if (k.KKM(e, 16384, 89)) {
-            r = m = 1;
-            k.KO(0, t, "ይ");
-        } else if (k.KKM(e, 16384, 90)) {
-            r = m = 1;
-            k.KO(0, t, "ዝ");
+            k.KO(1, t, "»");
         } else if (k.KKM(e, 16384, 256)) {
             r = m = 1;
             k.KO(0, t, "እ");
@@ -2167,33 +1563,9 @@ function Keyboard_gff_amh_7() {
         } else if (k.KKM(e, 16384, 285)) {
             r = m = 1;
             k.KO(0, t, "፡");
-        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "«", 1)) {
-            r = m = 1;
-            k.KO(1, t, "(");
-        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "(", 1)) {
-            r = m = 1;
-            k.KO(1, t, "[");
-        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "[", 1)) {
-            r = m = 1;
-            k.KO(1, t, "<");
-        } else if (k.KKM(e, 16384, 286) && k.KCM(1, t, "<", 1)) {
-            r = m = 1;
-            k.KO(1, t, "«");
         } else if (k.KKM(e, 16384, 286)) {
             r = m = 1;
             k.KO(0, t, "«");
-        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, "»", 1)) {
-            r = m = 1;
-            k.KO(1, t, ")");
-        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, ")", 1)) {
-            r = m = 1;
-            k.KO(1, t, "]");
-        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, "]", 1)) {
-            r = m = 1;
-            k.KO(1, t, ">");
-        } else if (k.KKM(e, 16384, 287) && k.KCM(1, t, ">", 1)) {
-            r = m = 1;
-            k.KO(1, t, "»");
         } else if (k.KKM(e, 16384, 287)) {
             r = m = 1;
             k.KO(0, t, "»");
@@ -2331,6 +1703,647 @@ function Keyboard_gff_amh_7() {
         } else if (k.KKM(e, 16384, 333)) {
             r = m = 1;
             k.KO(0, t, "፼");
+        } else if (k.KKM(e, 16400, 32)) {
+            r = m = 1;
+            k.KO(0, t, "፡");
+        } else if (k.KKM(e, 16384, 222) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "'");
+        } else if (k.KKM(e, 16384, 222) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s18, 1, t);
+            k.KDO(-1, t, 0);
+        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, "፣", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፥");
+        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, "፥", 1)) {
+            r = m = 1;
+            k.KO(1, t, ",");
+        } else if (k.KKM(e, 16384, 188) && k.KCM(1, t, ",", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፣");
+        } else if (k.KKM(e, 16384, 188)) {
+            r = m = 1;
+            k.KO(0, t, "፣");
+        } else if (k.KKM(e, 16384, 189) && k.KCM(1, t, "፡", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፦");
+        } else if (k.KKM(e, 16384, 190) && k.KCM(2, t, "..", 2)) {
+            r = m = 1;
+            k.KO(2, t, "…");
+        } else if (k.KKM(e, 16384, 190) && k.KCM(1, t, "…", 1)) {
+            r = m = 1;
+            k.KO(1, t, "...");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(3, t, "፲፻፼", 3)) {
+            r = m = 1;
+            k.KO(3, t, "፼፼");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s35) && k.KCM(2, t, "፻ ", 2)) {
+            r = m = 1;
+            k.KIO(3, this.s36, 1, t);
+            k.KO(-1, t, "፻");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s35) && k.KCM(2, t, "፻፼", 2)) {
+            r = m = 1;
+            k.KIO(3, this.s36, 1, t);
+            k.KO(-1, t, "፻፼");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(3, 1, t), this.s36) && k.KCM(2, t, "፻፼", 2)) {
+            r = m = 1;
+            k.KIO(3, this.s35, 1, t);
+            k.KO(-1, t, "፼፼");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፲፻", 2)) {
+            r = m = 1;
+            k.KO(2, t, "፼");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፲፼", 2)) {
+            r = m = 1;
+            k.KO(2, t, "፻፼");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፻፼", 2)) {
+            r = m = 1;
+            k.KO(2, t, "፲፻፼");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(2, t, "፼፼", 2)) {
+            r = m = 1;
+            k.KB(t);
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s36) && k.KCM(1, t, "፻", 1)) {
+            r = m = 1;
+            k.KIO(2, this.s35, 1, t);
+            k.KO(-1, t, "፼");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s35) && k.KCM(1, t, "፼", 1)) {
+            r = m = 1;
+            k.KIO(2, this.s36, 1, t);
+            k.KO(-1, t, "፼");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(2, 1, t), this.s36) && k.KCM(1, t, "፼", 1)) {
+            r = m = 1;
+            k.KIO(2, this.s35, 1, t);
+            k.KO(-1, t, "፻፼");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፩", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፲");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፲", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፻");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፻", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፲፻");
+        } else if (k.KKM(e, 16384, 48) && k.KCM(1, t, "፼", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፲፼");
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(1, 1, t), this.s35)) {
+            r = m = 1;
+            k.KIO(1, this.s36, 1, t);
+        } else if (k.KKM(e, 16384, 48) && k.KA(0, k.KC(1, 1, t), this.s36)) {
+            r = m = 1;
+            k.KIO(1, this.s35, 1, t);
+            k.KO(-1, t, "፻");
+        } else if (k.KKM(e, 16384, 49) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "1");
+        } else if (k.KKM(e, 16384, 49) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፩");
+        } else if (k.KKM(e, 16384, 49) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፩");
+        } else if (k.KKM(e, 16384, 50) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "2");
+        } else if (k.KKM(e, 16384, 50) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፪");
+        } else if (k.KKM(e, 16384, 50) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፪");
+        } else if (k.KKM(e, 16384, 51) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "3");
+        } else if (k.KKM(e, 16384, 51) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፫");
+        } else if (k.KKM(e, 16384, 51) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፫");
+        } else if (k.KKM(e, 16384, 52) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "4");
+        } else if (k.KKM(e, 16384, 52) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፬");
+        } else if (k.KKM(e, 16384, 52) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፬");
+        } else if (k.KKM(e, 16384, 53) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "5");
+        } else if (k.KKM(e, 16384, 53) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፭");
+        } else if (k.KKM(e, 16384, 53) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፭");
+        } else if (k.KKM(e, 16384, 54) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "6");
+        } else if (k.KKM(e, 16384, 54) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፮");
+        } else if (k.KKM(e, 16384, 54) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፮");
+        } else if (k.KKM(e, 16384, 55) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "7");
+        } else if (k.KKM(e, 16384, 55) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፯");
+        } else if (k.KKM(e, 16384, 55) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፯");
+        } else if (k.KKM(e, 16384, 56) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "8");
+        } else if (k.KKM(e, 16384, 56) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፰");
+        } else if (k.KKM(e, 16384, 56) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፰");
+        } else if (k.KKM(e, 16384, 57) && k.KA(0, k.KC(2, 1, t), this.s39) && k.KA(1, k.KC(1, 1, t), this.s41)) {
+            r = m = 1;
+            k.KIO(2, this.s39, 1, t);
+            k.KIO(-1, this.s40, 2, t);
+            k.KO(-1, t, "9");
+        } else if (k.KKM(e, 16384, 57) && k.KCM(1, t, "'", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፱");
+        } else if (k.KKM(e, 16384, 57) && k.KA(0, k.KC(1, 1, t), this.s38)) {
+            r = m = 1;
+            k.KIO(1, this.s38, 1, t);
+            k.KO(-1, t, "፱");
+        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, "፡", 1)) {
+            r = m = 1;
+            k.KO(1, t, "።");
+        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, "።", 1)) {
+            r = m = 1;
+            k.KO(1, t, ":");
+        } else if (k.KKM(e, 16400, 186) && k.KCM(1, t, ":", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፡");
+        } else if (k.KKM(e, 16400, 186)) {
+            r = m = 1;
+            k.KO(0, t, "፡");
+        } else if (k.KKM(e, 16384, 186) && k.KCM(1, t, "፤", 1)) {
+            r = m = 1;
+            k.KO(1, t, ";");
+        } else if (k.KKM(e, 16384, 186) && k.KCM(1, t, ";", 1)) {
+            r = m = 1;
+            k.KO(1, t, "፤");
+        } else if (k.KKM(e, 16384, 186)) {
+            r = m = 1;
+            k.KO(0, t, "፤");
+        } else if (k.KKM(e, 16400, 188) && k.KCM(1, t, "‹", 1)) {
+            r = m = 1;
+            k.KO(1, t, "«");
+        } else if (k.KKM(e, 16400, 188) && k.KCM(1, t, "«", 1)) {
+            r = m = 1;
+            k.KO(1, t, "<");
+        } else if (k.KKM(e, 16400, 188)) {
+            r = m = 1;
+            k.KO(0, t, "‹");
+        } else if (k.KKM(e, 16400, 190) && k.KCM(1, t, "›", 1)) {
+            r = m = 1;
+            k.KO(1, t, "»");
+        } else if (k.KKM(e, 16400, 190) && k.KCM(1, t, "»", 1)) {
+            r = m = 1;
+            k.KO(1, t, ">");
+        } else if (k.KKM(e, 16400, 190)) {
+            r = m = 1;
+            k.KO(0, t, "›");
+        } else if (k.KKM(e, 16400, 65) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "አ");
+        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኣ");
+        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዓ");
+        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "አ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዓ");
+        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዓ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዐ");
+        } else if (k.KKM(e, 16400, 65) && k.KCM(1, t, "ዐ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኣ");
+        } else if (k.KKM(e, 16400, 65) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s16, 1, t);
+        } else if (k.KKM(e, 16400, 65) && k.KA(0, k.KC(1, 1, t), this.s26)) {
+            r = m = 1;
+            k.KIO(1, this.s27, 1, t);
+        } else if (k.KKM(e, 16400, 65)) {
+            r = m = 1;
+            k.KO(0, t, "አ");
+        } else if (k.KKM(e, 16400, 66)) {
+            r = m = 1;
+            k.KO(0, t, "ብ");
+        } else if (k.KKM(e, 16400, 67)) {
+            r = m = 1;
+            k.KO(0, t, "ጭ");
+        } else if (k.KKM(e, 16400, 68)) {
+            r = m = 1;
+            k.KO(0, t, "ድ");
+        } else if (k.KKM(e, 16400, 69) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "እ");
+        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "አ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኧ");
+        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ኢ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኤ");
+        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዕ");
+        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዐ");
+        } else if (k.KKM(e, 16400, 69) && k.KCM(1, t, "ዒ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዔ");
+        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s13, 1, t);
+        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s15)) {
+            r = m = 1;
+            k.KIO(1, this.s17, 1, t);
+        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s29, 1, t);
+        } else if (k.KKM(e, 16400, 69) && k.KA(0, k.KC(1, 1, t), this.s31)) {
+            r = m = 1;
+            k.KIO(1, this.s33, 1, t);
+        } else if (k.KKM(e, 16400, 69)) {
+            r = m = 1;
+            k.KO(0, t, "እ");
+        } else if (k.KKM(e, 16400, 70)) {
+            r = m = 1;
+            k.KO(0, t, "ፍ");
+        } else if (k.KKM(e, 16400, 71)) {
+            r = m = 1;
+            k.KO(0, t, "ግ");
+        } else if (k.KKM(e, 16400, 72)) {
+            r = m = 1;
+            k.KO(0, t, "ሕ");
+        } else if (k.KKM(e, 16400, 73) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኢ");
+        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኢ");
+        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዒ");
+        } else if (k.KKM(e, 16400, 73) && k.KCM(1, t, "ኢ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዒ");
+        } else if (k.KKM(e, 16400, 73) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s15, 1, t);
+        } else if (k.KKM(e, 16400, 73) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s31, 1, t);
+        } else if (k.KKM(e, 16400, 73)) {
+            r = m = 1;
+            k.KO(0, t, "ኢ");
+        } else if (k.KKM(e, 16400, 74)) {
+            r = m = 1;
+            k.KO(0, t, "ጅ");
+        } else if (k.KKM(e, 16400, 75)) {
+            r = m = 1;
+            k.KO(0, t, "ኽ");
+        } else if (k.KKM(e, 16400, 76)) {
+            r = m = 1;
+            k.KO(0, t, "ል");
+        } else if (k.KKM(e, 16400, 77)) {
+            r = m = 1;
+            k.KO(0, t, "ም");
+        } else if (k.KKM(e, 16400, 78)) {
+            r = m = 1;
+            k.KO(0, t, "ኝ");
+        } else if (k.KKM(e, 16400, 79) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኦ");
+        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኦ");
+        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዖ");
+        } else if (k.KKM(e, 16400, 79) && k.KCM(1, t, "ኦ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዖ");
+        } else if (k.KKM(e, 16400, 79) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s19, 1, t);
+        } else if (k.KKM(e, 16400, 79)) {
+            r = m = 1;
+            k.KO(0, t, "ኦ");
+        } else if (k.KKM(e, 16400, 80)) {
+            r = m = 1;
+            k.KO(0, t, "ጵ");
+        } else if (k.KKM(e, 16400, 81)) {
+            r = m = 1;
+            k.KO(0, t, "ቅ");
+        } else if (k.KKM(e, 16400, 82)) {
+            r = m = 1;
+            k.KO(0, t, "ር");
+        } else if (k.KKM(e, 16400, 83) && k.KCM(1, t, "ጽ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ፅ");
+        } else if (k.KKM(e, 16400, 83)) {
+            r = m = 1;
+            k.KO(0, t, "ጽ");
+        } else if (k.KKM(e, 16400, 84)) {
+            r = m = 1;
+            k.KO(0, t, "ጥ");
+        } else if (k.KKM(e, 16400, 85) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኡ");
+        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኡ");
+        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዑ");
+        } else if (k.KKM(e, 16400, 85) && k.KCM(1, t, "ኡ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዑ");
+        } else if (k.KKM(e, 16400, 85) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s14, 1, t);
+        } else if (k.KKM(e, 16400, 85) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s30, 1, t);
+        } else if (k.KKM(e, 16400, 85)) {
+            r = m = 1;
+            k.KO(0, t, "ኡ");
+        } else if (k.KKM(e, 16400, 86)) {
+            r = m = 1;
+            k.KO(0, t, "ቭ");
+        } else if (k.KKM(e, 16400, 87)) {
+            r = m = 1;
+            k.KO(0, t, "ው");
+        } else if (k.KKM(e, 16400, 88)) {
+            r = m = 1;
+            k.KO(0, t, "ሽ");
+        } else if (k.KKM(e, 16400, 89)) {
+            r = m = 1;
+            k.KO(0, t, "ይ");
+        } else if (k.KKM(e, 16400, 90)) {
+            r = m = 1;
+            k.KO(0, t, "ዥ");
+        } else if (k.KKM(e, 16400, 189) && k.KCM(1, t, "፟", 1)) {
+            r = m = 1;
+            k.KO(1, t, "_");
+        } else if (k.KKM(e, 16400, 189)) {
+            r = m = 1;
+            k.KO(0, t, "፟");
+        } else if (k.KKM(e, 16400, 189)) {
+            r = m = 1;
+            k.KO(0, t, "ዐ");
+        } else if (k.KKM(e, 16400, 189)) {
+            r = m = 1;
+            k.KO(0, t, "ሥ");
+        } else if (k.KKM(e, 16400, 189)) {
+            r = m = 1;
+            k.KO(0, t, "ኅ");
+        } else if (k.KKM(e, 16400, 189)) {
+            r = m = 1;
+            k.KO(0, t, "ፅ");
+        } else if (k.KKM(e, 16384, 65) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "አ");
+        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኣ");
+        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዓ");
+        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "አ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዓ");
+        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዓ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዐ");
+        } else if (k.KKM(e, 16384, 65) && k.KCM(1, t, "ዐ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኣ");
+        } else if (k.KKM(e, 16384, 65) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s16, 1, t);
+        } else if (k.KKM(e, 16384, 65) && k.KA(0, k.KC(1, 1, t), this.s26)) {
+            r = m = 1;
+            k.KIO(1, this.s27, 1, t);
+        } else if (k.KKM(e, 16384, 65)) {
+            r = m = 1;
+            k.KO(0, t, "አ");
+        } else if (k.KKM(e, 16384, 66)) {
+            r = m = 1;
+            k.KO(0, t, "ብ");
+        } else if (k.KKM(e, 16384, 67)) {
+            r = m = 1;
+            k.KO(0, t, "ች");
+        } else if (k.KKM(e, 16384, 68)) {
+            r = m = 1;
+            k.KO(0, t, "ድ");
+        } else if (k.KKM(e, 16384, 69) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "እ");
+        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "አ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኧ");
+        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ኢ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኤ");
+        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዕ");
+        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዐ");
+        } else if (k.KKM(e, 16384, 69) && k.KCM(1, t, "ዒ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዔ");
+        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s13, 1, t);
+        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s15)) {
+            r = m = 1;
+            k.KIO(1, this.s17, 1, t);
+        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s29, 1, t);
+        } else if (k.KKM(e, 16384, 69) && k.KA(0, k.KC(1, 1, t), this.s31)) {
+            r = m = 1;
+            k.KIO(1, this.s33, 1, t);
+        } else if (k.KKM(e, 16384, 69)) {
+            r = m = 1;
+            k.KO(0, t, "እ");
+        } else if (k.KKM(e, 16384, 70)) {
+            r = m = 1;
+            k.KO(0, t, "ፍ");
+        } else if (k.KKM(e, 16384, 71)) {
+            r = m = 1;
+            k.KO(0, t, "ግ");
+        } else if (k.KKM(e, 16384, 72) && k.KCM(1, t, "ህ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኅ");
+        } else if (k.KKM(e, 16384, 72)) {
+            r = m = 1;
+            k.KO(0, t, "ህ");
+        } else if (k.KKM(e, 16384, 73) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኢ");
+        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኢ");
+        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዒ");
+        } else if (k.KKM(e, 16384, 73) && k.KCM(1, t, "ኢ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዒ");
+        } else if (k.KKM(e, 16384, 73) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s15, 1, t);
+        } else if (k.KKM(e, 16384, 73) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s31, 1, t);
+        } else if (k.KKM(e, 16384, 73)) {
+            r = m = 1;
+            k.KO(0, t, "ኢ");
+        } else if (k.KKM(e, 16384, 74)) {
+            r = m = 1;
+            k.KO(0, t, "ጅ");
+        } else if (k.KKM(e, 16384, 75)) {
+            r = m = 1;
+            k.KO(0, t, "ክ");
+        } else if (k.KKM(e, 16384, 76)) {
+            r = m = 1;
+            k.KO(0, t, "ል");
+        } else if (k.KKM(e, 16384, 77)) {
+            r = m = 1;
+            k.KO(0, t, "ም");
+        } else if (k.KKM(e, 16384, 78)) {
+            r = m = 1;
+            k.KO(0, t, "ን");
+        } else if (k.KKM(e, 16384, 79) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኦ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኦ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዖ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኦ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዖ");
+        } else if (k.KKM(e, 16384, 79) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s19, 1, t);
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኮ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኰ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ጎ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ጐ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ኰ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኮ");
+        } else if (k.KKM(e, 16384, 79) && k.KCM(1, t, "ጐ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ጎ");
+        } else if (k.KKM(e, 16384, 79)) {
+            r = m = 1;
+            k.KO(0, t, "ኦ");
+        } else if (k.KKM(e, 16384, 80)) {
+            r = m = 1;
+            k.KO(0, t, "ፕ");
+        } else if (k.KKM(e, 16384, 81)) {
+            r = m = 1;
+            k.KO(0, t, "ቅ");
+        } else if (k.KKM(e, 16384, 82)) {
+            r = m = 1;
+            k.KO(0, t, "ር");
+        } else if (k.KKM(e, 16384, 83) && k.KCM(1, t, "ስ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ሥ");
+        } else if (k.KKM(e, 16384, 83)) {
+            r = m = 1;
+            k.KO(0, t, "ስ");
+        } else if (k.KKM(e, 16384, 84)) {
+            r = m = 1;
+            k.KO(0, t, "ት");
+        } else if (k.KKM(e, 16384, 85) && k.KDM(0, t, 0)) {
+            r = m = 1;
+            k.KO(0, t, "ኡ");
+        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "እ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ኡ");
+        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "ዕ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዑ");
+        } else if (k.KKM(e, 16384, 85) && k.KCM(1, t, "ኡ", 1)) {
+            r = m = 1;
+            k.KO(1, t, "ዑ");
+        } else if (k.KKM(e, 16384, 85) && k.KA(0, k.KC(1, 1, t), this.s18)) {
+            r = m = 1;
+            k.KIO(1, this.s14, 1, t);
+        } else if (k.KKM(e, 16384, 85) && k.KA(0, k.KC(1, 1, t), this.s28)) {
+            r = m = 1;
+            k.KIO(1, this.s30, 1, t);
+        } else if (k.KKM(e, 16384, 85)) {
+            r = m = 1;
+            k.KO(0, t, "ኡ");
+        } else if (k.KKM(e, 16384, 86)) {
+            r = m = 1;
+            k.KO(0, t, "ቭ");
+        } else if (k.KKM(e, 16384, 87)) {
+            r = m = 1;
+            k.KO(0, t, "ው");
+        } else if (k.KKM(e, 16384, 88)) {
+            r = m = 1;
+            k.KO(0, t, "ሽ");
+        } else if (k.KKM(e, 16384, 89)) {
+            r = m = 1;
+            k.KO(0, t, "ይ");
+        } else if (k.KKM(e, 16384, 90)) {
+            r = m = 1;
+            k.KO(0, t, "ዝ");
         }
         return r;
     };
