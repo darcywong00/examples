@@ -1,0 +1,21 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/chirality/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/chirality/"
+  },
+  "keyboard" : {
+    "id" : "chirality",
+    "name" : "Chirality Testing",
+    "filename" : "chirality-1.0.js",
+    "version" : "1.0",
+    "lastModified" : "2017-04-10T11:32:45.800+07:00",
+    "languages" : [
+      {
+        "id" : "en",
+        "name" : "English",
+        "region" : "North America"
+      }
+      ]
+  }
+}
