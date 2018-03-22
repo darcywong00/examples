@@ -1,0 +1,28 @@
+{
+  "options" : {
+    "device" : "any",
+    "keyboardBaseUri" : "https://darcywong00.github.io/examples/sil_ipa/",
+    "fontBaseUri" : "https://darcywong00.github.io/examples/sil_ipa/"
+  },
+  "keyboard" : {
+    "id" : "benipa",
+    "name" : "Ben IPA",
+    "filename" : "benipa-1.5.js",
+    "version" : "1.5",
+    "font": {
+      "family":"SIL Doulos",
+      "source":"DoulosSIL-R.ttf"
+    },
+    "oskFont": {
+      "family":"SIL Doulos",
+      "source":"DoulosSIL-R.ttf"
+    },    
+    "lastModified" : "2016-07-17T14:18:54+00:00",
+    "languages" : [
+      {
+        "id" : "qaa",
+        "name" : "BEN IPA"
+      }
+    ]
+  }
+}
