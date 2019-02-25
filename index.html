@@ -323,17 +323,11 @@
     
     <!- ------------------------------------------------------------------------------------------------- -->
     <div class="container">
-      <h3 id="legacy-distribution">Ad-Hoc Keyboard Distribution
-        <span class="badge badge-pill badge-warning">json</span>
-        <span class="badge badge-pill badge-warning">legacy</span>
-        <span class="badge badge-pill badge-warning">keyman://</span>
+      <h3 id="lexical-model-distribution">Lexical Model Distribution
+        <span class="badge badge-pill badge-warning">.model.kmp</span>
       </h3>
       <p>
-        The legacy method of <a href="https://help.keyman.com/developer/9.0/guides/distribute/mobile-apps">ad-hoc keyboard distribution</a> uses the <code>keyman://</code> protocol.
-        The Keyman mobile app processes the json file and downloads the associated files to install the keyboard.
-      </p>
-      <p>
-        Note: This method of ad-hoc keyboard distribution will be deprecated in 11.x per GitHub Issue <a href="https://github.com/keymanapp/keyman/issues/538">#538</a>
+        Distributing lexical model via .model.kmp packages.
       </p>
     </div>
 
@@ -342,32 +336,32 @@
       <div class="col-sm-9">
         <div class="card">
           <div class="card-header">
-            Khmer10 Touch
+            example en
           </div>
           <div class="card-body">
             <div class="card-group">
               <div class="card">
                 <div class="card-header">
-                  http:// Redirect <i class="fas fa-external-link-alt"></i>
+                  en.custom
                 </div>
                 <div class="card-body">
-                  <a href="keyman://localhost/open?url=http://darcywong00.github.io/examples/khmer10/khmer10-1.2.json" class="btn btn-secondary">khmer10-1.2.json</a>
+                  <a href="en.custom/example.en.custom.model.kmp" class="btn btn-secondary">en.custom.model.kmp</a>
                 </div>
               </div>
               <div class="card">
                 <div class="card-header">
-                  keyman://
+                  en.wordlist
                 </div>
                 <div class="card-body">
-                  <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/khmer10/khmer10-1.2.json" class="btn btn-secondary">khmer10-1.2.json</a>
+                  <a href="en.wordlist/example.en.wordlist.model.kmp" class="btn btn-secondary">en.wordlist.model.kmp</a>
                 </div>
               </div>
               <div class="card">
                 <div class="card-header">
-                  keyman://
+                  TBD
                 </div>
                 <div class="card-body">
-                  <a href="keyman://localhost/open?CustomHelpLink=https://darcywong00.github.io/examples/&url=https://darcywong00.github.io/examples/khmer10/khmer10-1.3.json" class="btn btn-secondary">khmer10-1.3.json</a>
+                  <!--a href=".model.kmp" class="btn btn-secondary">TBD.model.kmp</a-->
                 </div>
               </div>
             </div>
@@ -376,112 +370,6 @@
       </div>
     </div>
     <br/>
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            GFF Amharic 7
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/gff-1.4/gff_amh_7-1.4.json" class="btn btn-secondary">gff_amh_7-1.4.json</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            Inuktitut Pirurvik
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/inuktitut/inuktitut-1.0.json" class="btn btn-secondary">inuktitut-1.0.json</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            Lisan
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/lsd/lsd-1.0.json" class="btn btn-secondary">lsd-1.0.json</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br/>
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            Lisu Keyboard
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/lisu_basic/lisu_basic-0.3.json" class="btn btn-secondary">lisu_basic-0.3.json</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            NTL Touch
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/ntl/ntl_onekey-1.001.json" class="btn btn-secondary">ntl_onekey-1.001.json</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            Osmanya
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/osmanya/osmanya10.json" class="btn btn-secondary">osmanya10.json</a>
-          </div>
-        </div>
-      </div>
-	</div>
-    <br/>
-    <div class="row">
-      <div class="col-sm-1"></div>
-	  <div  class="col-sm-3">
-	    <div class="card">
-		  <div class="card-header">
-		    Chakma
-		  </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/easy_chakma/easy_chakma.json" class="btn btn-secondary">easy_chakma.json</a>
-          </div>
-        </div>
-      </div>		
-	  <div  class="col-sm-3">
-	    <div class="card">
-		  <div class="card-header">
-		    Chirality
-		  </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/chirality/chirality.json" class="btn btn-secondary">chirality.json</a>
-          </div>
-        </div>
-      </div>
-      <div  class="col-sm-3">
-        <div class="card">
-          <div class="card-header">
-            Ben IPA
-          </div>
-          <div class="card-body">
-            <a href="keyman://localhost/open?url=https://darcywong00.github.io/examples/sil_ipa/benipa.json" class="btn btn-secondary">benipa.json</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br />
-
-    
     <hr/>
 
     <!- ------------------------------------------------------------------------------------------------- -->
